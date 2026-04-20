@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+[![BOJ](https://bojstat.vulcan.site/v2/ko/jadejadejade)](https://www.acmicpc.net/user/jadejadejade)
+
 <!--
 **jadewisemann/jadewisemann** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
