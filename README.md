@@ -9,9 +9,7 @@
 
 # 팀이 쓸 기반을 만드는 프론트엔드
 
-**환경을 세팅해본 사람이라, 세팅되지 않은 곳에 던져놔도 굴러갑니다.**
-
-1년 간격으로 두 팀에서 품질 인프라를 세웠고, 두 번째는 리뷰어 없이 혼자 했습니다.
+컨벤션과 품질 기준은 문서가 아니라 도구로 지킵니다.
 
 </div>
 
@@ -29,7 +27,7 @@
 | **결정** | 기계가 막도록 세웠습니다 — 전체 `src`를 분모로 두는 커버리지 래칫, WebSocket 페이크와 실서버를 각각 겨냥한 Playwright 2단 E2E, Biome 정적 분석, dpdm 순환 의존성 검사. |
 | **결과** | 커버리지가 흔들리던 파일을 동일 테스트 2회 실행 비교로 특정해 제외하고, 근본 해결책은 코드에 근거와 함께 남겼습니다. E2E 18스펙 · 디바이스 4종. |
 
-<sub>레이어 우선 구조를 도메인 우선으로 236파일 재편해 게임 추가가 폴더 추가로 끝나게 했고, 자신의 리팩터링이 회귀를 내자 롤백한 커밋도 그대로 남아 있습니다.</sub>
+<sub>236파일을 도메인 우선 구조로 재편했고, 회귀를 낸 리팩터링을 스스로 롤백한 커밋도 남아 있습니다.</sub>
 
 [Demo](https://yorr.site) · [Code](https://github.com/jadewisemann/yorr) · [내 커밋](https://github.com/jadewisemann/yorr/commits?author=jadewisemann)
 
@@ -63,18 +61,18 @@
 
 | | |
 |---|---|
-| **주력**<br><sub>직접 설계 · 구현<br>[YORR](https://github.com/jadewisemann/yorr/commits?author=jadewisemann) · [FestiFriends](https://github.com/FestiFriends/ff_frontend/commits?author=jadewisemann) · [Pookjayo](https://github.com/jadewisemann/Pookjayo)</sub> | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-087EA4?style=flat-square&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-433E38?style=flat-square) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) |
-| **사용 경험**<br><sub>적용 범위가 부분적</sub> | ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![MSW](https://img.shields.io/badge/MSW-FF6A33?style=flat-square&logo=mockserviceworker&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-EC5990?style=flat-square&logo=reacthookform&logoColor=white) ![Radix UI](https://img.shields.io/badge/Radix%20UI-161618?style=flat-square&logo=radixui&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **학습 중**<br><sub>교육 과정에서 학습, 실무 적용 전</sub> | ![Java](https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![MySQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
+| **주력** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-087EA4?style=flat-square&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-433E38?style=flat-square) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) |
+| **사용 경험** | ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![MSW](https://img.shields.io/badge/MSW-FF6A33?style=flat-square&logo=mockserviceworker&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-EC5990?style=flat-square&logo=reacthookform&logoColor=white) ![Radix UI](https://img.shields.io/badge/Radix%20UI-161618?style=flat-square&logo=radixui&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **학습 중** | ![Java](https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![MySQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
 
 <br>
 
 ## Education
 
-- **삼성청년SW아카데미(SSAFY) 15기** — 2026.01 ~ 재학 · SW 역량테스트 A+ · 알고리즘 스터디 조직 · 운영
-- **코드잇 스프린트 프론트엔드 심화** — 2025.04 ~ 07 수료
-- **이스트소프트 오르미 프론트엔드 4기** — 2024.11 ~ 2025.04 수료
-- **인하대학교 화학과** — 2015.03 ~ 2024.08 졸업
+- **삼성청년SW아카데미(SSAFY) 15기** · 2026 ~ · SW 역량테스트 A+
+- **코드잇 스프린트 프론트엔드 심화** · 2025
+- **이스트소프트 오르미 프론트엔드 4기** · 2024 – 2025
+- **인하대학교 화학과** · 2024 졸업
 
 <br>
 
@@ -84,11 +82,8 @@
 
 <a href="https://solved.ac/profile/jadejadejade"><img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jadejadejade" alt="solved.ac 프로필"></a>
 
-<sub>
-
-[jadewisemann@gmail.com](mailto:jadewisemann@gmail.com) · [velog.io/@jadewisemann](https://velog.io/@jadewisemann) — 알고리즘 · 컴퓨터구조 · 네트워크 학습 기록 125편
-
-</sub>
+<a href="mailto:jadewisemann@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
+<a href="https://velog.io/@jadewisemann"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog"></a>
 
 </div>
 <!-- 이력서 링크 확보되면 푸터에 추가 (DESIGN.md §9) -->
