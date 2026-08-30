@@ -1,18 +1,65 @@
-## Hi there 👋
-
-[![BOJ](https://bojstat.vulcan.site/v2/ko/jadejadejade)](https://www.acmicpc.net/user/jadejadejade)
-
 <!--
-**jadewisemann/jadewisemann** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  이 파일의 소스는 프라이빗 레포 jadewisemann/_jadewisemann 이다.
+  공개 레포(jadewisemann/jadewisemann)의 README.md 를 직접 고치지 마라 — 다음 동기화 때 덮어써진다.
+  각 절의 작성 기준은 DESIGN.md 참고 (§5 표준 구조, §3 주장-증거 결합, §6 금지 목록).
+  링크와 이미지는 반드시 절대 URL 로 쓴다 (§7). 상대 경로는 공개 레포 기준으로 재해석되어 404 가 난다.
 
-Here are some ideas to get you started:
+  아래 1·2·3·5 절은 내용이 확정될 때까지 주석 처리해 둔다.
+  빈 헤딩만 노출된 프로필은 "미완성"이라는 신호를 주므로, 채운 절만 주석을 벗겨 공개한다.
+-->
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+
+<!-- ── 1. 포지셔닝 ─────────────────────────────────────────────────
+     리크루터가 3초 안에 읽는 부분. 「누구 + 어떤 문제를 + 어떻게」가 한 문장에 들어가야 한다.
+     "프론트엔드 개발자입니다"는 정보량 0. 지향 포지션(FE/BE/풀스택) 확정 후 작성. (§4-1, §8)
+
+# <포지셔닝 한 문장>
+
+<한 줄 부연>
+-->
+
+
+<!-- ── 2. Featured Projects ────────────────────────────────────────
+     2~4개만. 선별이 곧 실력의 신호다 (§4-5).
+     프로젝트당 3줄: 문제 / 내 결정·기여 / 결과(가능하면 숫자). "뭘 만들었나"가 아니라 "뭘 해결했나" (§4-3).
+     프로필 README 의 품질 상한은 여기 링크된 핀 리포의 품질이 결정한다 (§4-2).
+
+## Featured Projects
+
+### <프로젝트 이름>
+
+- **문제** — <무엇이 문제였나>
+- **결정** — <내가 무엇을 어떻게 결정했나>
+- **결과** — <숫자로 말할 수 있으면 숫자로>
+
+[Demo](https://<배포 주소>) · [Code](https://github.com/jadewisemann/<repo>)
+-->
+
+
+<!-- ── 3. Skills ───────────────────────────────────────────────────
+     주력 / 프로젝트에서 써봄 / 학습 중 3단 구분. 전부 "능숙"으로 쓰면 전부 의심받는다.
+     각 항목은 그것이 증명되는 리포로 링크하는 것이 이상적. 로고 배지 벽은 금지 (§4-4, §6).
+
+## Skills
+
+- **주력** — <증거 리포 링크와 함께>
+- **프로젝트에서 써봄** — 
+- **학습 중** — 
+-->
+
+
+<!-- ── 4. 검증 가능한 지표 ─────────────────────────────────────────
+     클릭하면 사실 확인이 되는 것만 남긴다 (§3). 아래 배지는 solved.ac 프로필로 연결된다. -->
+
+[![solved.ac](https://mazassumnida.wtf/api/v2/generate_badge?boj=jadejadejade)](https://solved.ac/profile/jadejadejade)
+
+
+<!-- ── 5. Contact ──────────────────────────────────────────────────
+     전환 지점. 다음 행동이 없는 README 는 금지 (§4-7).
+
+## Contact
+
+- **Email** — jadewisemann@gmail.com
+- **이력서** — <링크>
+- **블로그** — <링크>
 -->
