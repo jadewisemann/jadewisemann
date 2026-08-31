@@ -1,7 +1,7 @@
 <!--
   이 파일의 소스는 프라이빗 레포 jadewisemann/_jadewisemann 이다.
   공개 레포(jadewisemann/jadewisemann)의 README.md 를 직접 고치지 마라 — 다음 동기화 때 덮어써진다.
-  작성 기준은 루트 DESIGN.md (§1 포지셔닝 v10, §6 README 설계)이고, 사실의 출처는 ref/다.
+  작성 기준은 루트 DESIGN.md (§1 포지셔닝 v9, §6 README 설계)이고, 사실의 출처는 ref/다.
   링크와 이미지는 공개 레포에서도 동작하도록 절대 URL만 사용한다.
 -->
 
@@ -19,27 +19,23 @@
 
 ---
 
-## 프로젝트
+## 대표 프로젝트
 
 ### 01 · [YORR](https://github.com/jadewisemann/yorr)
 
-`2026.07–08` · `6인` · `프론트엔드 단독` · `실시간 멀티플레이 게임 플랫폼`
+<sub>2026.07–08 · 6인 · 프론트엔드 단독 · 실시간 멀티플레이 게임 플랫폼</sub>
 
-`React` · `TypeScript` · `Vite` · `TanStack Router` · `Zustand` · `Three.js` · `Rapier3D`
-
-<a href="https://yorr.site">
+<a href="https://skillicons.dev">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jadewisemann/yorr/main/frontend/public/hero/yacht-narrow.webp">
-    <img src="https://raw.githubusercontent.com/jadewisemann/yorr/main/frontend/public/hero/yacht-wide.webp" alt="YORR 요트 다이스 게임 히어로 이미지" width="100%">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react%2Cts%2Cvite%2Cthreejs%2Cvitest&perline=5&theme=light">
+    <img src="https://skillicons.dev/icons?i=react,ts,vite,threejs,vitest&perline=5&theme=dark" alt="YORR 기술 스택: React, TypeScript, Vite, Three.js, Vitest">
   </picture>
 </a>
 
-| 영역 | 구현 스펙 |
-|---|---|
-| 입력·연출 | 모션 센서 원시값 → 클라이언트 판정 이벤트 · 3D 물리·진동·소리 클라이언트 처리 |
-| 구조 | 프론트엔드 236파일 도메인 우선 재편 · `dpdm` 순환 의존성 검사 |
-| 검증 | Playwright E2E 18스펙 (`mock` 14 · `real` 4) · 320px 가로 넘침 기하 판정 · 전체 `src` 기준 커버리지 측정 |
-| 복원·회귀 | `sessionToken` 기반 게임 재접속 상태 복원 · 배포 회귀 리팩터링 롤백 |
+- 모션 입력 · 원시 센서값을 클라이언트 판정 이벤트로 변환 · 3D 연출
+- 구조 · 프론트엔드 236개 파일 도메인 우선 재편 · 순환 의존성 검사
+- 검증 · 브라우저 E2E 18개(가상 서버 14 · 실제 서버 4) · 320px 가로 넘침 기하 판정 · 전체 소스 기준 커버리지 측정
+- 신뢰성 · 세션 토큰 기반 재접속 상태 복원 · 배포 회귀 리팩터링 롤백
 
 [데모](https://yorr.site) · [코드](https://github.com/jadewisemann/yorr) · [아키텍처](https://github.com/jadewisemann/yorr/blob/main/frontend/docs/architecture.md) · [커밋](https://github.com/jadewisemann/yorr/commits?author=jadewisemann)
 
@@ -47,16 +43,18 @@
 
 ### 02 · [FestiFriends](https://github.com/FestiFriends/ff_frontend)
 
-`2025.05–07` · `8인` · `PM` · `프론트엔드`
+<sub>2025.05–07 · 8인 · PM · 프론트엔드 · 공연 동행 매칭 플랫폼</sub>
 
-`Next.js` · `React` · `TypeScript` · `TanStack Query` · `Tailwind CSS` · `Zod` · `Jest` · `MSW`
+<a href="https://skillicons.dev">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react%2Cts%2Cnextjs%2Ctailwind%2Cjest&perline=5&theme=light">
+    <img src="https://skillicons.dev/icons?i=react,ts,nextjs,tailwind,jest&perline=5&theme=dark" alt="FestiFriends 기술 스택: React, TypeScript, Next.js, Tailwind CSS, Jest">
+  </picture>
+</a>
 
-| 영역 | 구현 스펙 |
-|---|---|
-| URL 상태 | 공연 필터·정렬·페이지네이션 ↔ URL query parameter · TanStack Query 연동 |
-| 컴포넌트 | 접근 가능한 headless compound `PerformanceCard` · 목록·상세·찜 화면 공통화 |
-| 품질 | ESLint·Prettier · commitlint · Husky `pre-push` (`lint → test → build`) · Jest/MSW · PR·이슈 템플릿 |
-| 디버깅 | `PerformanceDatePicker` 무한 렌더 · 불안정한 `useEffect` 의존성 제거 · `useCallback` 안정화 |
+- URL 상태 · 공연 필터·정렬·페이지네이션과 서버 상태를 URL로 동기화
+- 컴포넌트 · 접근 가능한 headless compound PerformanceCard · 목록·상세·찜 화면 공통화
+- 품질 · push 전 lint·test·build 검사 · 커밋 규칙 · 테스트·모킹 환경 · PR·이슈 템플릿
 
 [데모](https://ff-frontend-rust.vercel.app/) · [코드](https://github.com/FestiFriends/ff_frontend) · [버그 수정 커밋](https://github.com/FestiFriends/ff_frontend/commit/786efc5285bf72f1ac980659a3c269cb7e75f71d)
 
@@ -64,17 +62,20 @@
 
 ### 03 · [Pookjayo](https://github.com/jadewisemann/Pookjayo)
 
-`2025.03–04` · `5인` · `팀장·PM` · `프론트엔드`
+<sub>2025.03–04 · 5인 · 팀장·PM · 모바일 우선 숙박 검색·예약·결제 플랫폼</sub>
 
-`React` · `JavaScript` · `Vite` · `Zustand` · `Tailwind CSS` · `Firebase` · `Firestore` · `IndexedDB`
+<a href="https://skillicons.dev">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react%2Cjs%2Cvite%2Ctailwind%2Cfirebase&perline=5&theme=light">
+    <img src="https://skillicons.dev/icons?i=react,js,vite,tailwind,firebase&perline=5&theme=dark" alt="Pookjayo 기술 스택: React, JavaScript, Vite, Tailwind CSS, Firebase">
+  </picture>
+</a>
 
-| 영역 | 구현 스펙 |
-|---|---|
-| 정합성 | Firestore transaction으로 예약·잔여 객실·검색 인덱스·포인트·거래 기록 원자적 갱신 · 중복 예약 방지 |
-| 결제 상태 | `IDLE → DATA_LOADED → PROCESSING → COMPLETED / ERROR` · `PROCESSING` 중복 요청 거부 |
-| 검색·캐시 | 1–3-gram 토큰 인덱스 · 메모리/IndexedDB 2단 캐시 |
+- 정합성 · Firestore 트랜잭션으로 예약·잔여 객실·검색 인덱스·포인트·거래 기록 원자적 갱신 · 중복 예약 방지
+- 결제 상태 · IDLE → DATA_LOADED → PROCESSING → COMPLETED / ERROR · PROCESSING 중복 요청 거부
+- 검색·캐시 · 1–3-gram 토큰 인덱스 · 메모리/IndexedDB 2단 캐시
 
-[데모](https://pookjayo.vercel.app/) · [코드](https://github.com/jadewisemann/Pookjayo)
+[데모](https://pookjayo.vercel.app/) · [코드](https://github.com/jadewisemann/Pookjayo) · [결제 로직](https://github.com/jadewisemann/Pookjayo/blob/main/functions/src/payment/process-payment.js) · [검색 로직](https://github.com/jadewisemann/Pookjayo/blob/main/src/firebase/searchQuery.js)
 
 ---
 
