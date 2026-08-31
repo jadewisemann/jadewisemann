@@ -1,111 +1,125 @@
 <!--
   이 파일의 소스는 프라이빗 레포 jadewisemann/_jadewisemann 이다.
   공개 레포(jadewisemann/jadewisemann)의 README.md 를 직접 고치지 마라 — 다음 동기화 때 덮어써진다.
-  작성 기준은 루트 DESIGN.md (§1 포지셔닝 v2, §6 README 설계). 사실의 출처는 ref/ 다.
-  링크는 절대 URL만 쓴다 (DESIGN.md §7).
+  작성 기준은 루트 DESIGN.md (§1 포지셔닝 v2, §6 README 설계)이고, 사실의 출처는 ref/다.
+  링크와 이미지는 공개 레포에서도 동작하도록 절대 URL만 사용한다.
 -->
 
 <div align="center">
 
-# 정유진 · Frontend Engineer
+# 정유진
 
-**6인 팀 · 프론트엔드 단독 · 실시간 멀티플레이 게임 플랫폼**<br>
-React · TypeScript · Test Automation · Realtime Web
+**Frontend Engineer**
+
+Sole frontend engineer on a [six-person team](https://github.com/jadewisemann/yorr) building a real-time multiplayer web game platform.<br>
+I turn interaction-heavy behavior into explicit state, clear domain boundaries, and executable quality checks.
+
+[GitHub](https://github.com/jadewisemann) · [Velog](https://velog.io/@jadewisemann) · [Email](mailto:jadewisemann@gmail.com)
 
 </div>
-
-<br>
-
-## 프로젝트
-
-### 01. YORR
-
-> 휴대폰을 컨트롤러로 사용하는 실시간 멀티플레이 게임 플랫폼
-
-`React` `TypeScript` `Vite` `TanStack Router` `Zustand` `Three.js` `Rapier3D` `WebSocket` `Vitest` `Playwright` `Biome`
-
-| 구분 | 내용 |
-|---|---|
-| **기간 · 팀** | 2026.07–08 · 6인 (BE 3 · AI 1 · Infra 1 · **FE 1**) |
-| **역할** | 프론트엔드 단독 · 화면, 상태 관리, 실시간 통신, 3D 게임, 테스트 환경 |
-| **구조** | 236파일 도메인 우선 구조 재편 · dpdm 순환 의존성 검사 |
-| **테스트** | Vitest 커버리지 래칫 · Playwright E2E 18스펙 · 디바이스 4종 |
-| **E2E** | WebSocket 페이크 14스펙 · 실서버 4스펙 |
-| **품질** | Biome 정적 분석 · 전체 `src` 기준 커버리지 분모 · 불안정 측정 파일 원인 기록 |
-
-- 모바일 모션 센서 입력을 클라이언트에서 판정한 이벤트로 변환
-- 320px 가로 넘침을 요소 좌표로 판정하는 E2E
-- 배포 회귀를 일으킨 대규모 리팩터링 롤백
-
-[**Demo**](https://yorr.site) · [**Code**](https://github.com/jadewisemann/yorr) · [**Commits**](https://github.com/jadewisemann/yorr/commits?author=jadewisemann)
-
-<br>
-
-### 02. FestiFriends
-
-> 공연 탐색 · 찜 · 동행 모임 플랫폼
-
-`Next.js` `React` `TypeScript` `TanStack Query` `Tailwind CSS` `Zod` `Jest` `RTL` `MSW` `ESLint` `Husky`
-
-| 구분 | 내용 |
-|---|---|
-| **기간 · 팀** | 2025.05–07 · 8인 · PM · 형상 관리 · 프론트엔드 개발 |
-| **구현** | 공연 목록 · 찜 · 모임 개설 · 공통 컴포넌트 · URL 기반 필터 상태 |
-| **품질** | ESLint 커스텀 규칙 · commitlint · pre-push `lint → test → build` |
-| **테스트** | Jest · RTL · MSW 초기 구성 · 컴포넌트 문서와 테스트 병행 |
-
-[**Demo**](https://ff-frontend-rust.vercel.app/) · [**Code**](https://github.com/FestiFriends/ff_frontend) · [**Commits**](https://github.com/FestiFriends/ff_frontend/commits?author=jadewisemann)
-
-<br>
-
-### 03. Pookjayo
-
-> 모바일 우선 숙박 검색 · 예약 · 결제 플랫폼
-
-`React` `JavaScript` `Vite` `Zustand` `Tailwind CSS` `Firebase Functions` `Firestore` `IndexedDB` `Python`
-
-| 구분 | 내용 |
-|---|---|
-| **기간 · 팀** | 2025.03–04 · 5인 · 팀장/PM · 프론트엔드 개발 |
-| **구현** | 결제 상태 FSM · 예약 트랜잭션 · N-gram 검색 · 메모리/IndexedDB 2단 캐시 |
-| **데이터** | 예약 · 잔여 객실 · 검색 인덱스를 단일 Firestore 트랜잭션으로 갱신 |
-| **보안** | 클라이언트 쓰기 차단 · 모든 변경을 Firebase Functions로 제한 |
-
-[**Demo**](https://pookjayo.vercel.app/) · [**Code**](https://github.com/jadewisemann/Pookjayo)
-
-<br>
-
-## 기술
-
-| 영역 | 기술 |
-|---|---|
-| **Frontend** | `TypeScript` `JavaScript` `React` `Next.js` `Vite` `Tailwind CSS` |
-| **State · Data** | `Zustand` `TanStack Query` `React Hook Form` `Zod` `Firebase` `IndexedDB` |
-| **Test · Quality** | `Vitest` `Playwright` `Jest` `RTL` `MSW` `ESLint` `Biome` `Husky` |
-| **Graphics** | `Three.js` `Rapier3D` |
-| **Learning** | `Java` `Spring Boot` `Vue 3` `SQL` |
-
-<br>
-
-## 교육
-
-| 기간 | 과정 |
-|---|---|
-| **2026–현재** | 삼성청년SW아카데미(SSAFY) 15기 · SW 역량테스트 A+ |
-| **2025** | 코드잇 스프린트 프론트엔드 심화 |
-| **2024–2025** | 이스트소프트 오르미 프론트엔드 4기 |
-| **2024 졸업** | 인하대학교 화학과 |
-
-<br>
 
 ---
 
+## Selected work
+
+### 01 · [YORR](https://github.com/jadewisemann/yorr)
+
+`Real-time multiplayer web game platform controlled by phones`
+
+**Role** · Sole frontend engineer in a six-person team
+
+The client connects a large-screen game with mobile controllers. The interesting work was keeping input, game state, and UI behavior testable as the product grew.
+
+<a href="https://yorr.site">
+  <picture>
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jadewisemann/yorr/main/frontend/public/hero/yacht-narrow.webp">
+    <img src="https://raw.githubusercontent.com/jadewisemann/yorr/main/frontend/public/hero/yacht-wide.webp" alt="YORR yacht dice game hero artwork" width="100%">
+  </picture>
+</a>
+
+- **Interaction** · Converted raw motion input into client-side game events and handled 3D physics and feedback on the client.
+- **Architecture** · Reorganized 236 frontend files around product domains and added dependency-cycle checks.
+- **Quality** · Built 18 Playwright specs across mocked and real-server paths, checked 320px overflow geometrically, and measured coverage against the full `src` tree.
+- **Reliability** · Implemented session-based game-state restoration and rolled back a large refactor after it caused a deployment regression.
+
+[Demo](https://yorr.site) · [Code](https://github.com/jadewisemann/yorr) · [Architecture](https://github.com/jadewisemann/yorr/blob/main/frontend/docs/architecture.md) · [Commits](https://github.com/jadewisemann/yorr/commits?author=jadewisemann)
+
+<br>
+
+### 02 · [FestiFriends](https://github.com/FestiFriends/ff_frontend)
+
+`Festival discovery and group-matching platform`
+
+**Role** · PM and frontend developer in an eight-person team
+
+- **Navigation** · Synchronized performance filters, sorting, pagination, and TanStack Query state through URL query parameters.
+- **Components** · Rebuilt `PerformanceCard` as an accessible, headless compound component for list, detail, and favorites views.
+- **Team quality** · Set up ESLint/Prettier conventions, commitlint, Husky `pre-push` (`lint → test → build`), Jest/MSW, and PR/issue templates.
+- **Debugging** · Traced an infinite render loop to an unstable function in a `useEffect` dependency, then removed the unstable dependency and stabilized the change handler with `useCallback`.
+
+[Demo](https://ff-frontend-rust.vercel.app/) · [Code](https://github.com/FestiFriends/ff_frontend) · [Bug-fix commit](https://github.com/FestiFriends/ff_frontend/commit/786efc5285bf72f1ac980659a3c269cb7e75f71d)
+
+<br>
+
+### 03 · [Pookjayo](https://github.com/jadewisemann/Pookjayo)
+
+`Mobile-first accommodation search, booking, and payment platform`
+
+**Role** · Team lead / PM; frontend and serverless payment logic
+
+- **Consistency** · Used a Firestore transaction to update reservations, availability, search index, points, and transaction records together; confirmed bookings are checked inside the transaction to prevent double booking.
+- **Payment state** · Modeled the client flow as `IDLE → DATA_LOADED → PROCESSING → COMPLETED / ERROR`; invalid transitions from `PROCESSING` reject repeat submissions.
+- **Search and cache** · Built a 1–3-gram token index to avoid collection scans and a memory/IndexedDB two-level cache for stable hotel data.
+
+[Demo](https://pookjayo.vercel.app/) · [Code](https://github.com/jadewisemann/Pookjayo)
+
+## Engineering focus
+
+- **Interaction systems** · Mobile motion input, 3D physics, and narrow-width boundaries. ([YORR](https://github.com/jadewisemann/yorr))
+- **State and data integrity** · Explicit payment state transitions and transactional updates to derived data. ([Pookjayo](https://github.com/jadewisemann/Pookjayo))
+- **Frontend architecture** · Domain-first organization, URL-driven query state, and headless compound components. ([YORR](https://github.com/jadewisemann/yorr) · [FestiFriends](https://github.com/FestiFriends/ff_frontend))
+- **Quality engineering** · E2E harnesses, coverage baselines, lint rules, hooks, and tests. ([YORR](https://github.com/jadewisemann/yorr) · [FestiFriends](https://github.com/FestiFriends/ff_frontend))
+
+## Technical stack
+
+**Core**
+
+`TypeScript` · `JavaScript` · `React` · `Next.js` · `Vite`
+
+**State and data**
+
+`Zustand` · `TanStack Query` · `React Hook Form` · `Zod` · `Firebase` · `Firestore` · `Firebase Functions` · `IndexedDB`
+
+**UI and graphics**
+
+`Tailwind CSS` · `Radix UI` · `Three.js` · `Rapier3D`
+
+**Testing and quality**
+
+`Vitest` · `Playwright` · `Jest` · `React Testing Library` · `MSW` · `ESLint` · `Prettier` · `Husky` · `commitlint`
+
+**Currently learning**
+
+`Java` · `Spring Boot` · `Vue 3` · `SQL`
+
+## Education
+
+- `2026–present` · SSAFY 15 · SW competency test A+
+- `2025` · Codeit Sprint · Advanced Frontend
+- `2024–2025` · ESTsoft Ormi Frontend 4
+- `2024` · Inha University · Chemistry
+
+## Contact
+
+[GitHub](https://github.com/jadewisemann) · [Velog](https://velog.io/@jadewisemann) · [Email](mailto:jadewisemann@gmail.com)
+
 <div align="center">
 
-<a href="https://solved.ac/profile/jadejadejade"><img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jadejadejade" alt="solved.ac 프로필"></a>
+<a href="https://solved.ac/profile/jadejadejade"><img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jadejadejade" alt="solved.ac profile"></a>
 
-<a href="mailto:jadewisemann@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
-<a href="https://velog.io/@jadewisemann"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog"></a>
+<a href="mailto:jadewisemann@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email jadewisemann"></a>
+<a href="https://velog.io/@jadewisemann"><img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog blog"></a>
 
 </div>
+
 <!-- 이력서 링크 확보되면 푸터에 추가 (DESIGN.md §8) -->
